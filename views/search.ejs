@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta property="og:title" content="Decimal Developement">
+    <meta property="og:description" content="Search guides by Decimal Developement and by other developers!">
+    <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet"/>
+    <link rel="icon" href="<%= config.logo %> " type="image/icon type">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style>
+      body{ font-family: Alata; }
+
+      .main{
+        text-align: center;
+        font-family: Alata;
+        color: black;
+        position: relative;
+        padding-bottom: 50px;
+        width: 90%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        left: 5%;
+        border-radius: 4px;
+        top: 30px;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+      }
+
+      #name{ 
+        font-weight: bold;
+        font-size: 30px;
+      }
+      
+      .guides a{ color: black; }
+      body::-webkit-scrollbar { width: 0.5em; }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: #292929;
+        outline: 1px solid slategrey;
+      }
+
+      @media only screen and (max-width: 600px){
+        .search{ display: inline-block; }
+        .search button{ 
+          width: 100%;
+          position: relative;
+          top: 3px;
+        }
+        .search input{ width: 100%; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <%- include('../partials/header.ejs') %>
+
+    <div class="main">
+      <div class="search">
+        <h1 style="font-size: 40px;">Search results:</h1><hr>
+        <input type="text" id="search" placeholder="Search Here" style="padding: 8px; border-radius: 5px; font-family: Alata; border: 2px solid black;">
+        <button onclick="location.search=`?query=${document.getElementById('search').value.split(' ')[0].toLowerCase()}`" class="btn btn-danger" style="position: relative; top: -2px; padding: 8px;">Search</button>
+
+        <div class="guides" style="position: relative; top: 10px;">
+        <% if(array.length == 0){ %><h3>No Results Found!</h3><% } %>
+        <div class="row">
+        <% array.forEach(a => { %>
+        <div class="col-sm-4" style="position: relative; top: 3px;">
+        <div class="card">
+          <div class="card-header" style="background-color: #fff;">
+            <font id="name" style="position: relative; top: -4px;"><%= a.name %></font><br>
+            <font id="des" style="position: relative; top: -4px;"><%= a.description %></font>
+            <br>
+          </div>
+
+          <div class="card-img-top">
+            <img src="<%= a.thumbnail %>" class="img-fluid" style="width: 100%;"><br>
+          </div>
+          
+          <div class="card-footer" style="background-color: #fff; text-align: center; color: blue;">
+            <a href="https://decimaldev.repl.co/guides/<%= a.name.toLowerCase().split(' ').join('-') %>">Read</a>
+          </div>
+        </div></div>
+        <% }) %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
