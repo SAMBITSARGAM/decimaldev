@@ -18,5 +18,6 @@
     "description": "Making a beginners Electron app with Javascript",
     "thumbnail": "https://cdn.glitch.com/1e5e278d-4135-41bc-9115-11844dfcb3b6%2FElectron.png?v=1600179998524",
     "author": "Science Spot Codes",
-    "file": "electron/make-an-electron-app"
+    "file": "electron/make-an-electron-app.md"
+  }
 ]
