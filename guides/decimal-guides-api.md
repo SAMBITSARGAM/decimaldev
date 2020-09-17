@@ -2,7 +2,7 @@
 
 ---
 ```
-/articles/:articleName/?json=1
+/guides/:guideName/?json=1
 ```
 
 ---
@@ -12,7 +12,7 @@
 ---
 | Name        | Type    | Description     |
 |:------------|:--------|:----------------|
-| articleName |  string | Name of article |
+| guideName   |  string | Name of guide   |
 
 ---
 
@@ -21,7 +21,7 @@
 ---
 | Name         | Description               |
 |:-------------|:--------------------------|
-| message      | Only if invalid article   |
-| name         | Name of article           |
-| description  | Description of Article    |
-| content      | Content of Article in MD  |
+| message      | Only if invalid guide     |
+| name         | Name of guide             |
+| description  | Description of guide      |
+| content      | Content of guide   in MD  |
