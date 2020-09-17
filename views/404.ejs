@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>404</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet"/>
+    <link rel="icon" href="<%= config.logo %> " type="image/icon type">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    
+    <style>
+      body{ font-family: Alata; }
+
+      .main{
+        color: black;
+        position: relative;
+        top: 20%;
+        text-align: center;
+      }
+      .main h1{ font-size: 100px; position: relative; top: -30px; }
+      .main font{ position: relative; top: -50px; font-size: 40px;}
+      .main a{
+        color: black;
+        background-color: transparent;
+        padding: 20px;
+        text-decoration: none;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+      }
+      .main a:hover{
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <%- include('../partials/header.ejs') %>
+
+    <div class="main">
+      <h1>404</h1>
+      <font>Uh Oh! Looks like you have lost somewhere!</font><br>
+      <a href="/">Back to Home</a>
+    </div>
+  </body>
+</html>
