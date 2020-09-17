@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>Decimal Developement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta property="og:title" content="Decimal Developement">
+    <meta property="og:description" content="A Developement which provides Open Source Codes to developers...">
+    <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet"/>
+    <link rel="icon" href="<%= config.logo %> " type="image/icon type">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style>
+      body{ font-family: Alata; z-index: 100; }
+      .decimalcol{ background-color: #18181d; }
+
+      body::-webkit-scrollbar { width: 0.5em; } 
+      body::-webkit-scrollbar-thumb { background-color: #292929; }
+
+      .projects{
+        width: 90%;
+        position: relative;
+        left: 50px;
+      }
+
+      @media only screen and (max-width: 600px){
+        .project-class{ 
+          width: 90%;
+          position: relative;
+          left: -15px;
+        }
+
+        .row .col-sm-4{ width: 100%; }
+
+        .about .col-sm-4{
+          width: 90%;
+          text-align: center; 
+        }
+
+        .row img{ margin: 0 auto; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <%- include('../partials/header.ejs') %>
+
+    <div class="row about" style="width: 90%; position: relative;top: 30px; left: 30px;">
+      <div class="col-sm-3">
+        <div class="card" style="border: none; justify-content: center;">
+          <img src="https://avatars1.githubusercontent.com/u/69678617?s=460&u=a3620f50c7ca8d7cf01d88eb05185cf27ed28be1&v=4" width="300" style="border-radius: 100%; justify-content: center;">
+        </div>
+      </div>
+
+      <div class="col-sm-4" style="position: relative; top: 40px; left: 20px;">
+        <div class="card" style="border: none;">
+          <h1 style="font-weight: bold;">Decimal Developement</h1>
+          <font>An Developement which provides open source codes, packages, guides, etc to developers...</font>
+
+          <div class="social" style="position: relative; top: 10px;">
+            <button class="btn btn-git" onclick="location.href='https://github.com/Scientific-Guy'" style="background-color: #363636; color: white;"><i class="fab fa-github"></i> GitHub</button>
+            <button class="btn btn-git" onclick="location.href='https://discord.gg/FrduEZd'" style="background-color: #7298da; color: white;"><i class="fab fa-discord"></i> Discord</button>
+            <button class="btn btn-git" onclick="location.href='https://www.npmjs.com/~science_spot_codes'" style="background-color: #f14668; color: white;"><i class="fab fa-npm"></i> NPM</button>
+            <button class="btn btn-git" onclick="location.href='https://pypi.org/user/science_spot_codes/'" style="background-color: #ffea4a;"><i class="fab fa-python"></i> PyPi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-class" style="position: relative; top: 100px;">
+    <div class="projects">
+      <h1 id="npm-projects" class="heading"><a onclick="location.href='https://decimaldev.repl.co/#npm-projects'" style="color: #3273dc;">#</a> NPM Projects</h1><hr>
+
+      <div class="row">
+      <% projects.npm.forEach(p => { %>
+          <div class="col-sm-4" style="padding-top: 10px;">
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                <h2><%= p.name %></h2>
+                <font><%= p.des %></font><br>
+                <font style="opacity: 0.5; color: black;">NPM Package</font>
+              </div>
+
+              <div class="card-body">
+                <button class="btn btn-git" onclick="location.href='<%= p.links[0] %>'" style="background-color: #f14668; color: white;"><i class="fab fa-npm"></i> NPM</button>
+                <button class="btn btn-git" onclick="location.href='<%= p.links[1] %>'" style="background-color: #363636; color: white;"><i class="fab fa-github"></i> GitHub</button>
+                <button class="btn btn-git" onclick="location.href='<%= p.links[2] %>'" style="background-color: #ffea4a;"><%- svg.docs %> Docs</button>
+              </div>
+            </div>
+          </div>
+      <% }) %>
+      </div>
+    </div>
+
+    <div class="projects" style="position: relative; top: 20px;">
+      <h1 id="discord-related-projects" class="heading"><a onclick="location.href='https://decimaldev.repl.co/#discord-related-projects'" style="color: #3273dc;">#</a> Discord Related Projects</h1><hr>
+
+      <div class="row">
+      <% projects.discord.forEach(p => { %>
+          <div class="col-sm-4" style="padding-top: 10px;">
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                <h2><%= p.name %></h2>
+                <font><%= p.des %></font><br>
+                <font style="opacity: 0.5; color: black;"><%= p.type %></font>
+              </div>
+
+              <div class="card-body">
+                <button class="btn btn-git" onclick="location.href='<%= p.links[0] %>'" style="background-color: #f14668; color: white;"><%- p.names[0] %></button>
+                <button class="btn btn-git" onclick="location.href='<%= p.links[1] %>'" style="background-color: #363636; color: white;"><%- p.names[1] %></button>
+                <button class="btn btn-git" onclick="location.href='<%= p.links[2] %>'" style="background-color: #ffea4a;"><%- p.names[2] %></button>
+              </div>
+            </div>
+          </div>
+      <% }) %>
+      </div>
+    </div>
+
+    <div class="projects" style="position: relative; top: 40px;">
+      <h1 id="python-projects" class="heading"><a onclick="location.href='https://decimaldev.repl.co/#python-projects'" style="color: #3273dc;">#</a> Python Projects</h1><hr>
+
+      <div class="row">
+      <% projects.python.forEach(p => { %>
+          <div class="col-sm-4" style="padding-top: 10px;">
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                <h2><%= p.name %></h2>
+                <font><%= p.des %></font><br>
+                <font style="opacity: 0.5; color: black;">PyPi Package</font>
+              </div>
+
+              <div class="card-body">
+                <button class="btn btn-git" onclick="location.href='<%= p.links[0] %>'" style="background-color: #f14668; color: white;"><i class="fab fa-python"></i> PyPi</button>
+                <button class="btn btn-git" onclick="location.href='<%= p.links[1] %>'" style="background-color: #363636; color: white;"><i class="fab fa-github"></i> GitHub</button>
+                <button class="btn btn-git" onclick="location.href='<%= p.links[2] %>'" style="background-color: #ffea4a;"><%- svg.docs %> Docs</button>
+              </div>
+            </div>
+          </div>
+      <% }) %>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="extender" style="height: 180px;"></div>
+  </body>
+</html>
