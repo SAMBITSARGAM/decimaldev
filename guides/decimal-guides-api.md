@@ -8,7 +8,7 @@
 
 ---
 
-### Parameters
+**Parameters**
 
 ---
 
@@ -16,7 +16,7 @@ Guide name is the only parameter in the link. Setting the query parameter **json
 
 ---
 
-### JSON Response
+**JSON Response**
 
 ---
 | Name         | Description               |
@@ -32,20 +32,20 @@ Guide name is the only parameter in the link. Setting the query parameter **json
 ## Getting array of guides by query
 
 ---
-**Get:**
+**GET**
 ```
 /guides?query=query&json=1
 ```
 ---
 
-### Parameters
+**Parameters**
 
 ---
 As in start setting the query parameter **json** to 1 will return as json form and query parameter **query** which will be your query where the system will search for those article name to be included or starts with it and will retunr u array form
 
 ---
 
-### JSON Response
+**JSON Response**
 
 ---
 > In array of objects
