@@ -1,4 +1,4 @@
-# Decimal Developement v2
+# Decimal Developement v2 
 So actually yeah this is my new website of my developement, you can even fork and make changes to it.
 The old website codes also available. You can view it by clicking it [here](https://github.com/Scientific-Guy/decimaldev-old)
 
