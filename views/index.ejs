@@ -139,6 +139,30 @@
           </div>
       <% }) %>
       </div>
+      </div>
+
+      <div class="projects" style="position: relative; top: 70px;">
+      <h1 id="deno-projects" class="heading"><a onclick="location.href='https://decimaldev.repl.co/#deno-projects'" style="color: #3273dc;">#</a> Deno Projects</h1><hr>
+
+      <div class="row">
+      <% projects.deno.forEach(p => { %>
+          <div class="col-sm-4" style="padding-top: 10px;">
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                <h2><%= p.name %></h2>
+                <font><%= p.des %></font><br>
+                <font style="opacity: 0.5; color: black;">Deno Package</font>
+              </div>
+
+              <div class="card-body">
+                <button class="btn btn-git" onclick="location.href='<%= p.links[0] %>'" style="background-color: #f14668; color: white;"><%- svg.link %> Link</button>
+                <button class="btn btn-git" onclick="location.href='<%= p.links[1] %>'" style="background-color: #363636; color: white;"><i class="fab fa-npm"></i> GitHub</button>
+                <button class="btn btn-git" onclick="location.href='<%= p.links[2] %>'" style="background-color: #ffea4a;"><%- svg.docs %> Docs</button>
+              </div>
+            </div>
+          </div>
+      <% }) %>
+      </div>
     </div>
     </div>
     </div>
