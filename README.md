@@ -6,7 +6,7 @@ This website css is half dependent on Bootstrap 4 and FontAwesome
 
 This website has following features
 - [Guides](https://decimaldev.repl.co/guides)
-- [Api for guides](https://decimaldev.repl.co/guides/decimal-guides-api)
+- [Api for guides](https://decimaldev.repl.co/guides/decimal-guides-api) 
 
 Thats all features lel. I will add more in future.
 And yes its hosted in **repl.it**.
