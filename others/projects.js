@@ -1,6 +1,19 @@
 const svg = require('./svg.js')
 
 module.exports = {
+  deno: [
+    {
+      name: 'Factful.Deno',
+      type: 'Deno Package',
+      des: 'An easy way to get random facts using Deno!',
+      links: [
+        'https://raw.githubusercontent.com/Scientific-Guy/factful.deno/master/mod.ts',
+        'https://github.com/Scientific-Guy/factful.deno',
+        'https://github.com/Scientific-Guy/factful.deno#quick-example'
+      ]
+    }
+  ],
+
   npm: [
     {
       name: 'Factful.js',
