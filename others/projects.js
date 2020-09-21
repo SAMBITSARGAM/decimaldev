@@ -109,6 +109,24 @@ module.exports = {
         'https://github.com/Scientific-Guy/factful.py',
         'https://pypi.org/project/factful.py/'
       ]
+    },
+    {
+      name: 'Quickmongo.py',
+      des: 'A simple and quick wrapper for pymongo!',
+      links: [
+        'https://pypi.org/project/quickmongo.py/',
+        'https://github.com/Scientific-Guy/quickmongo.py',
+        'https://pypi.org/project/quickmongo.py/'
+      ]
+    },
+    {
+      name: 'Python Nasa Api',
+      des: 'Simple NASA Api Wrapper written in Python!',
+      links: [
+        'https://pypi.org/project/python-nasa-api/',
+        'https://github.com/Scientific-Guy/python-nasa-api',
+        'https://pypi.org/project/python-nasa-api/'
+      ]
     }
   ]
 }
