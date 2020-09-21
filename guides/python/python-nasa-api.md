@@ -1,8 +1,8 @@
 # Python Nasa API
 
-Simple wrapper for NASA Api written in python which was previously written by abh80 in **Javascript** as NPM which is deprecated now so i aka Science Spot recreated it in **Python** using requests modules!
+Python Nasa Api is a very simple pypi package which gives you access to the NASA Api in an very easy way!
 
-> This package is just made for fun and its not seriously made... You can actually read the original nasa api docs and you can actually get data from api but this is made for additional features. So, don't care if it's silly!
+- [PyPi Package Link](https://pypi.org/project/python-nasa-api/)
 
 ## Quick Docs
 
@@ -120,3 +120,5 @@ print(nasa.nivl.captions(id))
 
 - [Discord Support Server](https://discord.gg/FrduEZd)
 - [GitHub Repo](https://github.com/Scientific-Guy/python-nasa-api)
+
+If you think you can update this article then sure update it at github by doing a pull request [here](https://github.com/Scientific-Guy/decimaldev/blob/master/guides/python/python-nasa-api.md)
