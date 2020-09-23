@@ -106,7 +106,7 @@ db.get('foo')
 
 `foo` will be the key. It will return `bar` as we have set a value for it previously or else it will return NoneType
 
-#### 3. Get tyepof the value by key
+#### 3. Get typeof the value by key
 ```py
 db.typeof('foo')
 ```
