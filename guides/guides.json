@@ -11,7 +11,7 @@
     "description": "Simple API by us to get data of Articles!",
     "thumbnail": "https://cdn.glitch.com/1e5e278d-4135-41bc-9115-11844dfcb3b6%2FDecimal.png?v=1600153614865",
     "author": "Science Spot Codes",
-    "file": "decimal-guides-api.md"
+    "file": "api/decimal-guides-api.md"
   },
   {
     "name": "Make an electron app",
