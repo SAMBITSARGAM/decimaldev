@@ -4,6 +4,18 @@ For this you have to install the Electron Framework!
 ```
 npm i --save-dev electron
 ```
+---
+
+## Your Workspace
+
+Your workspace should look something like this...
+
+```
+My Electron App
+  |--package.json
+  |--index.js
+  |--index.html
+```
 
 ---
 ## Setting up package.json
