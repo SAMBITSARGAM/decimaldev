@@ -92,28 +92,28 @@ Now you have learnt to set database with Quickmongo.py and it will raise error i
 
 Quickmongo.py works like dict in python or map in javascript
 
-**1. Set value for a key**
+### 1. Set value for a key
 ```py
 db.set('foo', 'bar')
 ```
 
 `foo` will be the key and `bar` will be the data which is stored for that key!
 
-**2. Get the stored value for the key**
+### 2. Get the stored value for the key
 ```py
 db.get('foo')
 ```
 
 `foo` will be the key. It will return `bar` as we have set a value for it previously or else it will return NoneType
 
-**3. Get tyepof the value by key**
+### 3. Get tyepof the value by key**
 ```py
 db.typeof('foo')
 ```
 
 `foo` will be the key. It will return the type(value) of the key. For example previously we set `bar` for it which is a string so it will return `<class 'str'>` or NoneType if no value
 
-**4. Get all data**
+### 4. Get all data
 ```py
 db.all()
 ```
@@ -124,7 +124,7 @@ This will return a big array of `{'key': key, 'value': value}` dict of all datas
 db.startsWith('f')
 ```
 
-**5. Deleting Data**
+### 5. Deleting Data
 ```py
 db.deleteAll()
 ```
@@ -135,7 +135,7 @@ This is something similar to drop() which will clear whole data of collection bu
 db.delete('foo')
 ```
 
-**6. Adding and Subtracting**
+### 6. Adding and Subtracting
 
 Now to use `add()` and `subtract()` method then the old value ust be an int so i will be setting it to int
 
