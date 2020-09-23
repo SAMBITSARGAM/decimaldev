@@ -4,6 +4,8 @@ Decimal Api is an api provided by Decimal Developement which is easy to use and 
 
 ## Decimal Api Basics
 
+---
+
 So, first to check if the api is working perfectly or not you can do the following
 
 **GET:**
@@ -17,6 +19,8 @@ This should return you `{"message":"functional"}` else the api is not ready to u
 
 ## Api Statuses
 
+---
+
 | Status | Meaning                 |
 |--------|-------------------------|
 | 200    | Working Good            |
@@ -27,6 +31,8 @@ This should return you `{"message":"functional"}` else the api is not ready to u
 
 ---
 
-## Current Api
+## Current Api Library Docs
+
+---
 
 - [Decimal Guides Api](https://decimaldev.repl.co/guides/decimal-guides-api)
