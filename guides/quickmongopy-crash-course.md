@@ -34,4 +34,35 @@ Set your database by doing the following
 
 ```py
 from quickmongo import Database
+
+db = Database(
+  mongoURL="ur mongo uri here"
+)
 ```
+
+Incase if the system chose the wrong database, you can set your selected database in options and if the database is invalid, it will throw a TypeError showing available databases. Set your custom database by selecting below and remember that if you are using localhost then you need to set it to local by the following
+
+```py
+from quickmongo import Database
+
+db = Database(
+  mongoURL="ur mongo uri here",
+  options={
+    'db_name': 'local' # Or some other database unless if its localhost
+)
+```
+
+Well now lets come to the collection topic. Quickmongo.py will create a default collection with the name of `python` if you did not selected one in options
+
+```py
+from quickmongo import Database
+
+db = Database(
+  mongoURL="ur mongo uri here",
+  options={
+    'db_name': 'local', # Or some other database unless if its localhost,
+    'collection_name': 'someCollectionName'
+)
+```
+
+Now you have learnt to set database with Quickmongo.py and it will raise error if its invalid mongo uri...
