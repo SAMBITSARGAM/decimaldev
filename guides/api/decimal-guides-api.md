@@ -56,4 +56,30 @@ As in start setting the query parameter **json** to 1 will return as json form a
 
 ---
 
+## Getting all guides in array form
+
+---
+
+**GET:**
+
+```
+/guides?query=all&json=1
+```
+
+**Parameters:**
+
+Setting **json** to 1 means you are calling an api and setting `all` for `query` means it will return an array of all guides by Decimal Developement!
+
+**JSON Response:**
+
+> In array of objects
+
+| Name         | Description               |
+|:-------------|:--------------------------|
+| name         | Name of guide             |
+| description  | Description of guide      |
+| content      | Content of guide in MD    |
+
+---
+
 You can update this guide by doing a pull request [here](https://github.com/Scientific-Guy/decimaldev/blob/master/guides/api/decimal-guides-api.md)
