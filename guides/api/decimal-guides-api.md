@@ -1,5 +1,7 @@
 Decimal Guides Api is one paticular Api Library of Decimal Developement whereas it contains more api libraries and you can view docs for it [here](https://decimaldev.repl.co/guides/decimal-api)
 
+---
+
 ## Getting Paticular Guide
 
 ---
@@ -25,7 +27,6 @@ Guide name is the only parameter in the link. Setting the query parameter **json
 | name         | Name of guide             |
 | description  | Description of guide      |
 | content      | Content of guide in MD    |
-
 
 ---
 
