@@ -26,5 +26,12 @@
     "thumbnail": "https://github.com/Scientific-Guy/decimaldev/blob/master/assets/nasa.png?raw=true",
     "author": "Science Spot Codes",
     "file": "python/python-nasa-api.md"
+  },
+  {
+    "name": "Quickmongo.py",
+    "description": "Quickmongo.py Crash Course in some minutes!",
+    "thumbnail": "https://draywilliams.com/wp-content/uploads/2020/05/imageedit_56_5278557772.png",
+    "author": "Science Spot Codes",
+    "file": "quickmongopy-crash-course.md"
   }
 ]
