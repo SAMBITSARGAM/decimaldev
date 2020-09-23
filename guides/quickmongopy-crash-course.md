@@ -2,12 +2,16 @@ So yes, welcome to a new guide of Decimal Developement...
 
 ## Links
 
+---
+
 - [GitHub Source](https://github.com/Scientific-Guy/quickmongo.py)
 - [PyPi](https://pypi.org/project/quickmongo.py/)
 
 ---
 
 ## Questions
+
+---
 
 **Q. What is QuickMongo.py?**
 
@@ -29,6 +33,8 @@ So yes, welcome to a new guide of Decimal Developement...
 
 ## Installation
 
+---
+
 This is ofcourse that you need to install that pypi package before using it!
 
 ```
@@ -38,6 +44,8 @@ pip install quickmongo.py
 ---
 
 ## Setting up database
+
+---
 
 Set your database by doing the following
 
@@ -80,6 +88,8 @@ Now you have learnt to set database with Quickmongo.py and it will raise error i
 
 ## Basic Operations
 
+---
+
 Quickmongo.py works like dict in python or map in javascript
 
 **1. Set value for a key**
@@ -114,7 +124,7 @@ This will return a big array of `{'key': key, 'value': value}` dict of all datas
 db.startsWith('f')
 ```
 
-**5. Deleteing Data**
+**5. Deleting Data**
 ```py
 db.deleteAll()
 ```
@@ -150,6 +160,8 @@ Now the value for `foo` is 2-2 = 0
 ---
 
 ## At the end
+
+---
 
 Woo! You have finished learning Quickmongo.py in some minutes! You can actually update this guide and help others to get correct information by making a pull request [here](https://github.com/Scientific-Guy/decimaldev/blob/master/guides/quickmongopy-crash-course.md)
 
