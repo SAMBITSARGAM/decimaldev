@@ -26,5 +26,12 @@
     "thumbnail": "https://github.com/Scientific-Guy/decimaldev/blob/master/assets/nasa.png?raw=true",
     "author": "Science Spot Codes",
     "file": "python/python-nasa-api.md"
+  },
+  {
+    "name": "Deno Click it",
+    "description": "Simple click it website with Deno to learn Opine",
+    "thumbnail": "https://github.com/Scientific-Guy/decimaldev/blob/master/assets/Deno.png?raw=true",
+    "author": "Science Spot Codes",
+    "file": "deno/deno-click-it.md"
   }
 ]
