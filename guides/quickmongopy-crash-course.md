@@ -1,5 +1,14 @@
 So yes, welcome to a new guide of Decimal Developement...
 
+## Links
+
+- [GitHub Source](https://github.com/Scientific-Guy/quickmongo.py)
+- [PyPi](https://pypi.org/project/quickmongo.py/)
+
+---
+
+## Questions
+
 **Q. What is QuickMongo.py?**
 
 **A.** Quickmongo.py is a quickwrapper for Pymongo written in python which is actually same speed as PyMongo...
@@ -66,3 +75,82 @@ db = Database(
 ```
 
 Now you have learnt to set database with Quickmongo.py and it will raise error if its invalid mongo uri...
+
+---
+
+## Basic Operations
+
+Quickmongo.py works like dict in python or map in javascript
+
+**1. Set value for a key**
+```py
+db.set('foo', 'bar')
+```
+
+`foo` will be the key and `bar` will be the data which is stored for that key!
+
+**2. Get the stored value for the key**
+```py
+db.get('foo')
+```
+
+`foo` will be the key. It will return `bar` as we have set a value for it previously or else it will return NoneType
+
+**3. Get tyepof the value by key**
+```py
+db.typeof('foo')
+```
+
+`foo` will be the key. It will return the type(value) of the key. For example previously we set `bar` for it which is a string so it will return `<class 'str'>` or NoneType if no value
+
+**4. Get all data**
+```py
+db.all()
+```
+
+This will return a big array of `{'key': key, 'value': value}` dict of all datas and you can customize it by using `startsWith()` which will return the data's whose key startswith the search parameter which is `f` in given below example
+
+```py
+db.startsWith('f')
+```
+
+**5. Deleteing Data**
+```py
+db.deleteAll()
+```
+
+This is something similar to drop() which will clear whole data of collection but if you want to delete only one key use `delete()` method in which `foo` is the key and there would be no value for that key
+
+```py
+db.delete('foo')
+```
+
+**6. Adding and Subtracting**
+
+Now to use `add()` and `subtract()` method then the old value ust be an int so i will be setting it to int
+
+```py
+db.set('foo', 1)
+```
+
+Now lets add
+
+```py
+db.add('foo', 1)
+```
+
+Now 1 is the amount and `foo` is the key as always and now the value for the `foo` is 1+1 = 2 and `subtract()` is as same to `add()`
+
+```py
+db.subtract('foo', 2)
+```
+
+Now the value for `foo` is 2-2 = 0
+
+---
+
+## At the end
+
+Woo! You have finished learning Quickmongo.py in some minutes! You can actually update this guide and help others to get correct information by making a pull request [here](https://github.com/Scientific-Guy/decimaldev/blob/master/guides/quickmongopy-crash-course.md)
+
+Thank you! Read some guides and get knowledge below 
