@@ -6,7 +6,7 @@ Decimal Api is an api provided by Decimal Developement which is easy to use and 
 
 ---
 
-So, first to check if the api is working perfectly or not you can do the following
+So, if you want to check if the api is functional, you can do the following!
 
 **GET:**
 ```
