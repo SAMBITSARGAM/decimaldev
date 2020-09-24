@@ -39,10 +39,14 @@ require('./guides/guides.json').forEach(g => {
 
 // If the app gets '/'
 app.get('/', function(req, res) {
+  if(req.query.json == '1') return res.status(200).json({
+    message: 'functional'
+  })
+  res.status(200)
   res.render(__dirname + '/views/index.ejs', {
     projects: base.projects,
     config: base.config,
-    svg: require('./others/svg.js')
+    svg: require('./main/svg.js')
   })
   console.log('Ping Received At ' + Date.now())
 });
@@ -51,11 +55,18 @@ app.get('/', function(req, res) {
 app.get('/guides', (req, res) => {
   let array = []
   if(!req.query.query) array = guideArray
+  if(!req.query.query && req.query.json == '1') return res.status(400).json({
+    message: 'invalid usage of queries'
+  })
+  if(req.query.query == 'all' && req.query.json == '1') return res.status(200).json(guideArray)
   else{
     guideArray.forEach(a => {
-      if(a.name.toLowerCase().startsWith(req.query.query)) array.push(a)
+      if(a.name.toLowerCase().startsWith(req.query.query) || a.name.toLowerCase().includes(req.query.query)) array.push(a)
     })
   }
+  if(req.query.json == '1') return res.status(200).json(array)
+
+  res.status(200)
 
   res.render(__dirname + '/views/search.ejs', {
     array: array,
@@ -68,10 +79,15 @@ app.get('/guides/:name', (req, res) => {
   let name = req.params.name
   let data = guides.get(name.toLowerCase())
   if(req.query.json == 1){
-    if(!data) return res.send('{"message": "invalid guide"}')
-    return res.send(data)
+    if(!data) return res.status(204).json({
+      message: 'invalid',
+      reason: 'no guides found'
+    })
+    return res.status(200).json(data)
   }
   if(!data) return res.render(__dirname + '/views/404.ejs', {config: base.config})
+
+  res.status(200)
   res.render(__dirname + '/views/guide.ejs', {
     config: base.config,
     content: converter.makeHtml(data.content),
@@ -84,9 +100,9 @@ app.get('/guides/:name', (req, res) => {
   })
 })
 
-
 // 404 Page
 app.get('*', function(req, res) {
+  res.status(404)
   res.render(__dirname + '/views/404.ejs', {config: base.config})
 });
 
