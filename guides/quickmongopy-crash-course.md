@@ -86,6 +86,28 @@ Now you have learnt to set database with Quickmongo.py and it will raise error i
 
 ---
 
+## Events
+
+Events are way to trigger function when those events occur! Simple ready event example given below
+
+```py
+from quickmongo import Database
+
+def my_ready_function():
+    print('Database is ready')
+
+db = Database(
+    mongoURL='your mongo uri here',
+    events={
+        'ready': my_ready_function
+    }
+)
+```
+
+This will run `my_ready_function` or will throw error based on parameters must have 1 parameter or 0 parameter
+
+---
+
 ## Basic Operations
 
 ---
