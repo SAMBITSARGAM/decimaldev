@@ -4,7 +4,7 @@ Python Nasa Api is a very simple pypi package which gives you access to the NASA
 
 ## Quick Docs
 
-You need NASA's Official API to use this module!
+You need NASA's Official API to use this module! 
 
 ### Load Client Class
 
