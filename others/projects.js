@@ -127,6 +127,15 @@ module.exports = {
         'https://github.com/Scientific-Guy/python-nasa-api',
         'https://pypi.org/project/python-nasa-api/'
       ]
+    },
+    {
+      name: 'Spotify-Api.py',
+      des: 'Simple api wrapper written for spotify api in Python!',
+      links: [
+        'https://pypi.org/project/spotify-api.py/',
+        'https://github.com/spotify-api/spotify-api.py',
+        'https://pypi.org/project/spotify-api.py/'
+      ]
     }
   ]
 }
