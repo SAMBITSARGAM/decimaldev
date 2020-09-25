@@ -1,5 +1,5 @@
 So in this Guide we will be making a quick Electron app example!
-For this you have to install the Electron Framework!
+For this you have to install the Electron Framework! 
 
 ```
 npm i --save-dev electron
