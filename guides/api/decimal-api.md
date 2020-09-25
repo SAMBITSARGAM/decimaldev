@@ -10,7 +10,7 @@ So, if you want to check if the api is functional, you can do the following!
 
 **GET:**
 ```
-https://decimaldev.repl.co/?json=1
+https://decimaldev.xyz/?json=1
 ```
 
 This should return you `{"message":"functional"}` else the api is not ready to use!
@@ -35,4 +35,4 @@ This should return you `{"message":"functional"}` else the api is not ready to u
 
 ---
 
-- [Decimal Guides Api](https://decimaldev.repl.co/guides/decimal-guides-api)
+- [Decimal Guides Api](https://decimaldev.xyz/guides/decimal-guides-api)
