@@ -5,14 +5,11 @@ The old website codes also available. You can view it by clicking it [here](http
 This website css is half dependent on Bootstrap 4 and FontAwesome
 
 This website has following features
-- [Guides](https://decimaldev.repl.co/guides)
-- [Api for guides](https://decimaldev.repl.co/guides/decimal-guides-api) 
+- [Guides](https://decimaldev.xyz/guides)
+- [Api for guides](https://decimaldev.xyz/guides/decimal-guides-api) 
 
 Thats all features lel. I will add more in future.
-And yes its hosted in **repl.it**.
 Currently i am the only guy(Science Spot) who runs this developement ;)
 
 If any issues report it in issues tab.
 You also join our Discord Server by clicking [here](https://discord.gg/FrduEZd)
-
-And very most you can also post guides promoting your NPM package or anything. Do a pull request by updating the `/guides/guides.json`. I will review and add to the website which seems silly but Ok...
