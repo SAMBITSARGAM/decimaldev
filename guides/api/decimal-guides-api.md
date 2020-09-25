@@ -1,4 +1,4 @@
-Decimal Guides Api is one paticular Api Library of Decimal Developement whereas it contains more api libraries and you can view docs for it [here](https://decimaldev.repl.co/guides/decimal-api)
+Decimal Guides Api is one paticular Api Library of Decimal Developement whereas it contains more api libraries and you can view docs for it [here](https://decimaldev.xyz/guides/decimal-api)
 
 ---
 
