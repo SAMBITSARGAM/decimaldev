@@ -5,7 +5,7 @@ So yes, welcome to a new guide of Decimal Developement...
 ---
 
 - [GitHub Source](https://github.com/Scientific-Guy/quickmongo.py)
-- [PyPi](https://pypi.org/project/quickmongo.py/)
+- [PyPi](https://pypi.org/project/quickmongo.py/) 
 
 ---
 
