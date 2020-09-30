@@ -30,7 +30,7 @@ require('./guides/guides.json').forEach(g => {
     name: g.name,
     description: g.description,
     thumbnail: g.thumbnail,
-    content: fs.readFileSync(g.file).toString('utf-8')
+    content: fs.readFileSync('guides/' + g.file).toString('utf-8')
   }
   
   guideArray.push(data)
@@ -46,7 +46,7 @@ app.get('/', function(req, res) {
   res.render(__dirname + '/views/index.ejs', {
     projects: base.projects,
     config: base.config,
-    svg: require('./main/svg.js')
+    svg: require('./others/svg.js')
   })
   console.log('Ping Received At ' + Date.now())
 });
