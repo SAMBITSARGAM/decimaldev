@@ -1,5 +1,10 @@
 <div align="center">
   <h1>Decimal Developement v2</h1>
+  <div>
+    <a href="https://github.com/Scientific-Guy/decimaldev/"><img src="http://img.shields.io/github/languages/count/scientific-guy/decimaldev?style=for-the-badge"></a>
+    <a href="https://github.com/Scientific-Guy/decimaldev/"><img src="http://img.shields.io/github/repo-size/scientific-guy/decimaldev?style=for-the-badge"></a>
+    <a href="https://github.com/Scientific-Guy/decimaldev/"><img src="http://img.shields.io/github/license/scientific-guy/decimaldev?style=for-the-badge"></a>
+  </div>
 </div>
 
 So actually yeah this is my new website of my developement, you can even fork and make changes to it. 
