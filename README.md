@@ -6,7 +6,7 @@
     <a href="https://github.com/Scientific-Guy/decimaldev/"><img src="http://img.shields.io/github/license/scientific-guy/decimaldev?style=for-the-badge"></a>
     <a href="https://repl.it/github/Scientific-Guy/decimaldev/"><img src="https://img.shields.io/badge/Fork-repl.it-7298da?style=for-the-badge"></a>
   </div>
-</div>
+</div><br>
 
 So actually yeah this is my new website of my developement, you can even fork and make changes to it. 
 The old website codes also available. You can view it by clicking it [here](https://github.com/Scientific-Guy/decimaldev-old)
