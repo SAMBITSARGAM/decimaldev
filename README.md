@@ -9,16 +9,13 @@
   </div>
 </div><br>
 
-This is my Development Website Describing our Projects, Development and Help others with guides. You can Even fork and run it on repl.it!
+This is my development website describing our projects, development and help others with guides. You can even fork and run it on repl.it!
 
 This website has following features
 - [Guides](https://decimaldev.xyz/guides)
 - [Api for guides](https://decimaldev.xyz/guides/decimal-guides-api) 
 
-I am the Only Guy who runs this Developement
+I am the only guy who runs this developement
 
-# Join my Discord Server
+# Join my discord server
 https://discord.gg/FrduEZd
-
-
-This is one of a very Responsive Website
